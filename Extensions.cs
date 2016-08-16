@@ -16,5 +16,19 @@ namespace LINQ_Assignment
                 Console.WriteLine(s);
             }
         }
+
+        public static int SortAlphabetical(this Student s, Student other)
+        {
+            int result = s.Last.CompareTo(other.Last);
+            if(result == 0)
+            {
+                result = s.First.CompareTo(other.First);
+                if(result == 0)
+                {
+                    result = s.ID.CompareTo(other.ID);
+                }
+            }
+            return result;
+        }
     }
 }
