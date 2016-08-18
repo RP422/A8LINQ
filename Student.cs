@@ -30,6 +30,7 @@ namespace LINQ_Assignment
             new Student {First="Michael", Last="Tucker", ID=122, Scores= new List<int> {94, 92, 91, 91} }
         };
 
+
         public override string ToString()
         {
             return Last + ", " + First + "; ID: " + ID;
